@@ -13,7 +13,10 @@ public class SubsetSum {
             t[n][0] = true;
         }
 
+        long startTime = System.nanoTime();
         System.out.println("Subset Sum Exists: " + subsetSum(arr,sum,arr.length));
+        long endTime = System.nanoTime();
+        System.out.println("Total Time: " + (endTime - startTime));
     }
 
     private static boolean subsetSum(int[] arr, int sum, int length) {
